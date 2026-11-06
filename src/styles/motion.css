@@ -1,0 +1,6 @@
+@keyframes enter-content{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+[data-reveal].has-entered{animation:enter-content 650ms var(--ease) both}
+[data-reveal].has-entered:nth-child(2){animation-delay:65ms}
+[data-reveal].has-entered:nth-child(3){animation-delay:110ms}
+.is-switching{animation:enter-content 400ms var(--ease) both}
+@media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none}.hero-visual>img{transform:none}}

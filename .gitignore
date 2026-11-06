@@ -1,0 +1,45 @@
+# Este repositorio versiona somente o frontend e seus arquivos de suporte.
+# Novos arquivos/pastas na raiz precisam de uma inclusao explicita abaixo.
+/*
+!/.gitignore
+!/.gitattributes
+!/.nvmrc
+!/README.md
+!/package.json
+!/package-lock.json
+!/next.config.ts
+!/tsconfig.json
+!/vercel.json
+!/src/
+!/public/
+!/tests/
+!/scripts/
+!/docs/
+
+# Apenas os testes e o atalho utilizados pelo frontend.
+/tests/*
+!/tests/browser/
+/scripts/*
+!/scripts/abrir-site.ps1
+/docs/*
+!/docs/attributions.md
+
+# Dependencias, builds, caches, relatórios e configuracoes locais.
+node_modules/
+.next/
+out/
+dist/
+coverage/
+.cache/
+.vercel/
+.turbo/
+playwright-report/
+test-results/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+.hero{padding-top:54px}
+.hero-content{text-align:center}
+.hero h1{max-width:20ch;margin-inline:auto}
+.hero-description{font-size:var(--font-lead);line-height:1.45;margin:25px auto 0;max-width:60ch;color:var(--ink)}
+.region-form{display:flex;align-items:stretch;gap:12px;width:min(586px,100%);padding:8px;background:var(--surface);border-radius:var(--radius);margin:34px auto 0;text-align:left;scroll-margin-top:32px}
+.region-field{flex:1;min-width:0;padding:4px 6px}
+.region-field label{display:block;font-size:var(--font-small);line-height:1.4;padding-left:10px;color:var(--muted)}
+.region-field select{padding:0 28px 0 10px;min-height:30px;width:100%;font-weight:700;background:transparent}
+.region-form .button{flex-shrink:0}
+.hero-visual{margin-top:44px;position:relative;text-align:left;border-radius:var(--radius);overflow:hidden}
+.hero-visual>img{width:100%;height:520px;object-fit:cover;object-position:center 55%;transform-origin:center;animation:hero-drift 16s ease-in-out infinite alternate}
+.hero-visual figcaption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 24px;background:var(--surface);position:relative}
+.hero-visual figcaption>span:first-child{display:flex;align-items:center;gap:24px}
+.hero-visual figcaption strong{font-weight:700}
+.hero-visual figcaption [data-property-location],.image-disclaimer{font-size:var(--font-small);color:var(--muted)}
+@keyframes hero-drift{from{transform:scale(1)}to{transform:scale(1.025)}}
+@media(min-width:1600px){.hero-visual>img{height:580px}}
+@media(max-width:767px){.hero{padding-top:36px}.hero-description{margin-top:20px;font-size:var(--font-body);max-width:34ch}.hero-description br{display:none}.region-form{margin-top:28px;flex-direction:column;gap:10px;padding:10px}.region-field{padding:6px}.region-field select{min-height:36px}.region-form .button{width:100%}.hero-visual{margin-top:28px}.hero-visual>img{height:320px;object-position:54% center}.hero-visual figcaption{padding:14px 16px;align-items:flex-start}.hero-visual figcaption>span:first-child{align-items:flex-start;flex-direction:column;gap:0}.image-disclaimer{max-width:92px;text-align:right}}

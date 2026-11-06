@@ -1,0 +1,25 @@
+.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:14px 25px;border:0;border-radius:var(--radius);background:var(--accent);color:var(--accent-ink);font-weight:700;line-height:1.25;text-align:center;transition:transform 180ms var(--ease);white-space:nowrap}
+.button:hover{background:var(--accent-hover);transform:translateY(-2px)}
+.button:active{transform:translateY(0) scale(.98)}
+.button span{font-size:var(--font-lead);font-weight:400;line-height:1}
+.button-small{min-height:44px;padding:12px 18px;gap:14px}
+.button-blue{background:var(--brand)}
+.button-blue:hover{background:var(--ink)}
+.button-white{background:var(--bg);color:var(--brand)}
+.button-white:hover{background:var(--surface)}
+.text-link{display:inline-flex;align-items:center;gap:16px;font-weight:700;line-height:1.4;min-height:44px}
+.text-link:hover{text-decoration:underline;text-underline-offset:5px}
+.icon-button{display:inline-grid;place-items:center;background:var(--surface);color:var(--ink);border:0;border-radius:var(--radius);width:48px;height:48px;font-size:var(--font-lead);transition:transform 180ms var(--ease)}
+.icon-button:hover{background:var(--ink);color:var(--bg);transform:translateY(-2px)}
+select{max-width:100%;min-width:0;min-height:52px;border:0;background:var(--surface);color:var(--ink);padding:12px 36px 12px 16px;border-radius:var(--radius)}
+.lightbox{width:min(1240px,94vw);max-height:94svh;margin:auto;padding:20px;border:0;border-radius:var(--radius);background:var(--bg);color:var(--ink)}
+.lightbox::backdrop{background:rgba(8,38,94,.88)}
+.lightbox-toolbar,.lightbox-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.lightbox-toolbar{padding-bottom:16px;font-weight:700}
+.lightbox-image{background:var(--surface)}
+.lightbox-image img{width:100%;height:min(66svh,700px);object-fit:contain}
+.lightbox-bottom{padding-top:16px}
+.lightbox-bottom p{font-size:var(--font-small);max-width:76ch}
+.gallery-navigation{display:flex;gap:16px;align-items:center;flex-shrink:0}
+.gallery-navigation>span{font-size:var(--font-small);min-width:36px;text-align:center;font-variant-numeric:tabular-nums}
+@media(max-width:767px){.lightbox{padding:14px}.lightbox-toolbar,.lightbox-bottom{gap:12px}.lightbox-bottom{flex-wrap:wrap}.lightbox-image img{height:55svh}.button{padding-inline:20px}.gallery-navigation{gap:10px}}

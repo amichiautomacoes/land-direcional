@@ -1,0 +1,11 @@
+:root{
+  --bg:#fff;--surface:#f4f6f8;--ink:#08265e;--muted:#5a606d;
+  --brand:#003ca5;--accent:#d02f27;--accent-hover:#b92620;--accent-ink:#fff;
+  --field:#003ca5;--field-ink:#fff;--focus:#003ca5;
+  --font:var(--font-roboto),Arial,sans-serif;--font-small:14px;--font-body:16px;
+  --font-lead:22px;--font-heading:clamp(32px,3.5vw,48px);--font-display:clamp(48px,7vw,100px);
+  --gutter:32px;--content:1328px;--radius:4px;--section-space:144px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+@media(max-width:767px){:root{--gutter:20px;--section-space:88px;--font-lead:20px}}
+@media(max-width:359px){:root{--gutter:16px;--font-display:44px}}
